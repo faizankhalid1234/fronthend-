@@ -4,8 +4,8 @@ import Logo from "./Logo";
 function AuthLayout({ title, subtitle, children, footer, standalone = false }) {
   return (
     <div
-      className={`flex items-center justify-center px-4 py-8 sm:py-10 ${
-        standalone ? "min-h-screen pb-[max(2rem,env(safe-area-inset-bottom))]" : "min-h-[calc(100vh-90px)]"
+      className={`flex min-h-screen items-center justify-center px-4 py-8 sm:py-10 ${
+        standalone ? "pb-[max(2rem,env(safe-area-inset-bottom))]" : "pb-8"
       }`}
     >
       <div className="w-full max-w-[440px]">

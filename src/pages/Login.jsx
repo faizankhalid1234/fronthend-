@@ -48,6 +48,7 @@ function Login() {
 
   return (
     <AuthLayout
+      standalone
       title="Welcome Back"
       subtitle="Log in to order from BHANDU KHAN"
       footer={

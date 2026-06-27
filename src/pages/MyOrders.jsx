@@ -179,7 +179,7 @@ function MyOrders() {
   }, []);
 
   return (
-    <div className="mx-auto max-w-[800px] px-4 py-8 sm:px-5 sm:py-10">
+    <div className="mx-auto min-h-[calc(100vh-90px)] max-w-[800px] px-4 py-8 sm:px-5 sm:py-10">
       <div className="rounded-2xl bg-gradient-to-r from-navy to-navy-light p-5 text-white shadow-lg sm:p-6">
         <h1 className="text-[24px] font-bold sm:text-[28px]">My Orders</h1>
         <p className="mt-2 max-w-xl text-[13px] text-white/85 sm:text-[14px]">
