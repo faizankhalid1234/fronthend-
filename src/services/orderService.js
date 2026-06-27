@@ -1,6 +1,15 @@
-const API_URL = (import.meta.env.VITE_API_URL || "").replace(/\/$/, "");
+function normalizeApiBaseUrl(value = "") {
+  const trimmed = String(value || "").trim();
+  if (!trimmed) return "";
+  if (/^https?:\/\//i.test(trimmed)) {
+    return trimmed.replace(/\/$/, "");
+  }
+  return `https://${trimmed.replace(/^\/+/, "").replace(/\/$/, "")}`;
+}
+
+const API_URL = normalizeApiBaseUrl(import.meta.env.VITE_API_URL || "");
 const ACTIVE_ORDER_KEY = "bk_active_order";
-const ORDERS_API = `${API_URL}/api/orders`;
+const ORDERS_API = API_URL ? `${API_URL}/api/orders` : "/api/orders";
 export const ORDER_POLL_MS = 30000;
 
 export const ORDER_STATUS = {
