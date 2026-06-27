@@ -1,0 +1,68 @@
+import { dummyImages } from "../utils/dummyImages";
+
+export const menuItems = [
+  {
+    id: 1,
+    title: "Chicken Mandi",
+    arabicTitle: "مندي دجاج",
+    description: "Slow-cooked aromatic rice with tender chicken.",
+    price: "45.00 SAR",
+    image: dummyImages.mandi,
+  },
+  {
+    id: 2,
+    title: "Madfoon Chicken",
+    arabicTitle: "دجاج مدفون",
+    description: "Traditional underground-style chicken with spices.",
+    price: "38.00 SAR",
+    image: dummyImages.chicken,
+  },
+  {
+    id: 3,
+    title: "BBQ Mix Platter",
+    arabicTitle: "مشكل مشويات",
+    description: "Assorted grilled meats with fresh sides.",
+    price: "65.00 SAR",
+    image: dummyImages.mixGrill,
+  },
+  {
+    id: 4,
+    title: "Fried Fish Meal",
+    arabicTitle: "وجبة سمك مقلي",
+    description: "Crispy golden fried fish with rice and sauce.",
+    price: "42.00 SAR",
+    image: dummyImages.fish,
+  },
+  {
+    id: 5,
+    title: "Mutton Kabsa",
+    arabicTitle: "كبسة لحم",
+    description: "Fragrant spiced rice topped with tender mutton.",
+    price: "55.00 SAR",
+    image: dummyImages.mutton,
+  },
+  {
+    id: 6,
+    title: "Arabic Salad",
+    arabicTitle: "سلطة عربية",
+    description: "Fresh vegetables with lemon and olive oil.",
+    price: "12.00 SAR",
+    image: dummyImages.salad,
+  },
+  {
+    id: 7,
+    title: "Lentil Soup",
+    arabicTitle: "شوربة عدس",
+    description: "Warm hearty lentil soup with Arabic spices.",
+    price: "10.00 SAR",
+    image: dummyImages.soup,
+  },
+  {
+    id: 8,
+    title: "Crispy Broast",
+    arabicTitle: "بروست مقرمش",
+    description: "Golden crispy broasted chicken pieces.",
+    price: "28.00 SAR",
+    image: dummyImages.broast,
+  },
+];
