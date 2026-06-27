@@ -86,7 +86,7 @@ function AuthButton({ compact = false, onClick }) {
       }`}
     >
       <IoPersonOutline className="h-[19px] w-[19px]" />
-      <span>Log In</span>
+      <span className="whitespace-nowrap">Log In</span>
     </Link>
   );
 }

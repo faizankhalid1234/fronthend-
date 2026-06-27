@@ -50,7 +50,7 @@ function Navbar() {
   const whatsapp = settings?.whatsapp || "923029655325";
 
   const linkClass = ({ isActive }) =>
-    `text-[15px] font-semibold transition-colors hover:text-orange ${
+    `whitespace-nowrap text-[15px] font-semibold transition-colors hover:text-orange ${
       isActive ? "text-orange" : "text-navy"
     }`;
 
@@ -134,7 +134,7 @@ function Navbar() {
                   className={linkClass}
                   onClick={closeMobile}
                 >
-                  <span className="block rounded-lg px-3 py-2.5 hover:bg-orange-light">
+                  <span className="block rounded-lg px-3 py-2.5 hover:bg-orange-light whitespace-nowrap">
                     {link.label}
                   </span>
                 </NavLink>
